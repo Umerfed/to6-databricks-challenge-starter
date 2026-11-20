@@ -1,0 +1,44 @@
+{
+  "status": "MATCH",
+  "run1": {
+    "run_ts_utc": "2026-11-20T17:08:45Z",
+    "notebook_url": "https://dbc-48a16403-f66f.cloud.databricks.com/editor/notebooks/127024866558565",
+    "snapshot": "outputs/runs/run_20261120T170845Z.csv"
+  },
+  "run2": {
+    "run_ts_utc": "2026-11-20T17:10:50Z",
+    "notebook_url": "https://dbc-48a16403-f66f.cloud.databricks.com/editor/notebooks/127024866558565",
+    "snapshot": "outputs/runs/run_20261120T171050Z.csv"
+  },
+  "per_table": {
+    "return_features": {
+      "rows_run1": 12,
+      "rows_run2": 12,
+      "duplicate_ids_run1": 0,
+      "duplicate_ids_run2": 0,
+      "identical_ids_and_values": true
+    },
+    "features_train": {
+      "rows_run1": 4,
+      "rows_run2": 4,
+      "duplicate_ids_run1": 0,
+      "duplicate_ids_run2": 0,
+      "identical_ids_and_values": true
+    },
+    "features_validation": {
+      "rows_run1": 4,
+      "rows_run2": 4,
+      "duplicate_ids_run1": 0,
+      "duplicate_ids_run2": 0,
+      "identical_ids_and_values": true
+    },
+    "features_test": {
+      "rows_run1": 4,
+      "rows_run2": 4,
+      "duplicate_ids_run1": 0,
+      "duplicate_ids_run2": 0,
+      "identical_ids_and_values": true
+    }
+  },
+  "method": "Each run exports every row (output_table, return_id, tax_year, deduction_to_income) of the four saved tables; the two latest snapshots are compared row by row per table after sorting."
+}

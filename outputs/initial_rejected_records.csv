@@ -1,0 +1,4 @@
+source_table,return_id,taxpayer_id,tax_year,income,deduction,id_copies,copy_number,rejection_reason
+training.to6_challenge3_inputs.returns_initial,R01,F0,2022,100,20,2,1,uniqueness: return_id appears 2 times
+training.to6_challenge3_inputs.returns_initial,R01,F0,2022,100,20,2,2,uniqueness: return_id appears 2 times
+training.to6_challenge3_inputs.returns_initial,R02,F1,2022,,33,1,1,completeness: required field income is null

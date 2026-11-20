@@ -1,0 +1,22 @@
+{
+  "table": "training.to6_challenge3_inputs.returns_initial",
+  "rows": 13,
+  "distinct_return_ids": 12,
+  "rows_failing": 3,
+  "failing_return_ids": [
+    "R01",
+    "R02"
+  ],
+  "rules": [
+    "completeness: return_id, tax_year, income, deduction not null",
+    "uniqueness: each return_id exactly once",
+    "validity: amounts nonnegative"
+  ],
+  "decision": "REJECTED",
+  "gate_message": "training.to6_challenge3_inputs.returns_initial rejected: 3 failing row(s), return_ids ['R01', 'R02']",
+  "affected_records_table": "training.to6_c3_ae9b7bd04b35.initial_rejected_records",
+  "affected_records_export": "outputs/initial_rejected_records.csv",
+  "checked_at_utc": "2026-11-20T17:10:50Z",
+  "notebook_url": "https://dbc-48a16403-f66f.cloud.databricks.com/editor/notebooks/127024866558565",
+  "next_action": "Do not build features from returns_initial; assess returns_corrected with the same rules."
+}

@@ -1,0 +1,29 @@
+{
+  "table": "training.to6_c3_ae9b7bd04b35.return_features",
+  "source": "training.to6_challenge3_inputs.returns_corrected",
+  "columns": [
+    "return_id",
+    "tax_year",
+    "deduction_to_income"
+  ],
+  "rows": 12,
+  "distinct_return_ids": 12,
+  "nonzero_example": {
+    "return_id": "R01",
+    "income": 100,
+    "deduction": 20,
+    "expected_ratio": 0.2,
+    "saved_ratio": 0.2
+  },
+  "zero_income_cases": [
+    {
+      "return_id": "R03",
+      "saved_ratio": null
+    },
+    {
+      "return_id": "R09",
+      "saved_ratio": null
+    }
+  ],
+  "checked_at_utc": "2026-11-20T17:10:50Z"
+}
